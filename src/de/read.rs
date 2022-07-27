@@ -33,8 +33,8 @@ pub struct SliceReader<'storage> {
 
 /// A BincodeRead implementation for `io::Read`ers
 pub struct IoReader<R> {
-    reader: R,
-    temp_buffer: Vec<u8>,
+    pub reader: R,
+    pub temp_buffer: Vec<u8>,
 }
 
 impl<'storage> SliceReader<'storage> {

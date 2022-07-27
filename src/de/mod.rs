@@ -26,7 +26,7 @@ pub mod read;
 /// let bytes_read = d.bytes_read();
 /// ```
 pub struct Deserializer<R, O: Options> {
-    pub(crate) reader: R,
+    pub reader: R,
     options: O,
 }
 
